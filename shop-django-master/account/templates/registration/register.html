@@ -12,7 +12,7 @@
 <form class="form-signin" method="post" action="{% url 'register' %}">
 
   <input type="hidden" name="next" value="">
-  <img class="mb-4" src="/static/logo.svg" alt="" width="72" height="72">
+  <img class="mb-4" src="/static/Our Hut.png" alt="" width="125" height="80">
 
     {% csrf_token %}
 
@@ -31,6 +31,6 @@
     {% else %}
     <p class="text-success">{{ user|upper}}, Вы уже зарегистрированы. <br> <a href="{{ '/' }}">Перейти на главную</a></p>
     {% endif %}
-    <p class="mt-5 mb-3 text-muted">© Просто магазин 2020</p>
+    <p class="mt-5 mb-3 text-muted">© Our Hut 2022</p>
 </div>
 {% endblock %}
