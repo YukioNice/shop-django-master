@@ -52,7 +52,7 @@ class Product(models.Model):
         max_length=255,
         verbose_name='Наименование',
     )
-
+    price = models.DecimalField(max_digits=10, decimal_places=2)
     description = models.TextField(verbose_name='Описание')
 
     image = models.ImageField(
