@@ -59,6 +59,7 @@ class Product(models.Model):
         upload_to='catalog/',
         verbose_name='Изображение',
     )
+
     slug = models.SlugField(unique=True)
 
     class Meta:
