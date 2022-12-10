@@ -59,7 +59,22 @@ class Product(models.Model):
         upload_to='catalog/',
         verbose_name='Изображение',
     )
-
+    image2 = models.ImageField(
+        upload_to='catalog/',
+        verbose_name='Изображение2',
+    )
+    image3 = models.ImageField(
+        upload_to='catalog/',
+        verbose_name='Изображение3',
+    )
+    image4 = models.ImageField(
+        upload_to='catalog/',
+        verbose_name='Изображение4',
+    )
+    image5 = models.ImageField(
+        upload_to='catalog/',
+        verbose_name='Изображение5',
+    )
     slug = models.SlugField(unique=True)
 
     class Meta:
