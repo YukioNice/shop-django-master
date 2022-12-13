@@ -9,7 +9,7 @@
 <form class="form-signin" method="post" action="{% url 'login' %}">
 
     {% if form.errors %}
-        <p class="alert-danger">Ваше имя пользователя и пароль не совпадают!!!<br> Пожалуйста, попробуйте еще раз.</p>
+        <p class="alert-primary">Ваше имя пользователя и пароль не совпадают!!!<br> Пожалуйста, попробуйте еще раз.</p>
     {% endif %}
 
     <input type="hidden" name="next" value="{{ next }}">
